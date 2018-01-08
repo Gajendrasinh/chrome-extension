@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Design Testing</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/responsive-plugin.min.css">
+   </head>
+   <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <h3> Different Responsive Views for your webpage UI testing </h3> 
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+                <div class="showSetting"><a href="javascript:void(0)">Show Settings</a></div>
+            <div class="control-section">
+           
+            <div class="row" id="controlContainer">
+
+                <div class="settings"><a href="javascript:void(0)">Settings</a></div>   
+                            
+                <div class="col-sm-12 checkbox-container">
+                    <a class="hideSetting">X</a>
+                    <div class="checkbox-list"></div>
+                    <div class="size-control">
+                        <label class="radio-inline"><input type="radio" id="normal" name="option" value="1" >Check only width </label>
+                        <label class="radio-inline"><input type="radio" id="accurate" name="option" value="2" checked>Check actual device sizes</label>
+                    </div>
+                    <br> <a href="javascript:void(0)" class=" testWebpage">Want to test another webpage?</a>
+                </div>
+                
+            </div>
+            <form method="post" class="row" id="getUrlForm">
+                <div class="form-group col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <input type="text"  class="form-control" placeholder="Enter your url and hit enter" />
+                </div>  
+                <input type="submit" value="submit">                
+            </form>
+        </div> 
+        <div class="frames-container">
+            <div class="inner-container"></div>
+            
+         </div> 
+       
+        <div class="alert alert-danger" id="error-section"></div>
+
+        <div class="alert alert-danger" id="server-error">
+            <h4>It looks like there is some error while loading your webpage.</h4> <br>
+            
+            - It may be your server does not allow the iframe. <br>
+            - You may not have entered full URL - i.e. http:// or https://. <br>
+            - Page might be blocked in your network.<br><br>
+            
+            Please check and fix above points and try again!
+        </div>
+       
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/responsive-plugin.min.js"></script>
+    
+   </body>
+</html>
